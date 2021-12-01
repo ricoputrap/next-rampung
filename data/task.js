@@ -1,4 +1,4 @@
-export default tasks = [
+export const tasks = [
     {
         id: 1,
         title: "Create order",

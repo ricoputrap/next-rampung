@@ -1,4 +1,4 @@
-export default projects = [
+export const projects = [
     {
         id: 1,
         title: "Laundry App",
@@ -21,4 +21,4 @@ export default projects = [
         //     done: 0
         // }
     }
-]
+];
