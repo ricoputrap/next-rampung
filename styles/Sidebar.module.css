@@ -7,3 +7,48 @@
     padding: 40px 0;
     text-align: center;
 }
+
+.ul {
+    margin-top: 21px;
+    padding: 0 40px;
+    width: 100%;
+}
+
+.navItem {
+    list-style-type: none;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.navItem button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #898989;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.navItemActive button, .navItem button:hover {
+    background-color: #6DC2FC;
+    color: #ffffff;
+}
+
+.navItem button svg {
+    margin-right: 10px !important;
+}
+
+.navItemActive button svg path, .navItem button:hover svg path {
+    stroke: #fff;
+}
+
+.navItemFill:hover svg path {
+    fill: #fff;
+    stroke: unset !important;
+}
