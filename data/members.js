@@ -3,19 +3,19 @@ export const members = [
         id: 1,
         name: "Rico",
         imgUrl: "",
-        tasks: [1, 3]
+        // tasks: [1, 3]
     },
     {
         id: 2,
         name: "Vincent",
         imgUrl: "",
-        tasks: [4]
+        // tasks: [4]
     },
     {
         id: 3,
         name: "Edrick",
         imgUrl: "",
-        tasks: [5]
+        // tasks: [5]
     }
 ]
 
