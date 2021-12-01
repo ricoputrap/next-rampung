@@ -19,6 +19,7 @@ const Sidebar = () => {
             <ul className={ styles.ul }>
                 {navItems.map(item => (
                     <NavItem
+                        key={ item.id }
                         label={ item.label }
                         path={ item.path }
                         MenuIcon={ item.MenuIcon }

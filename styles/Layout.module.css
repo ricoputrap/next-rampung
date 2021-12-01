@@ -3,9 +3,14 @@
     display: flex;
 }
 
+.mainWrapper {
+    width: 100%;
+}
+
 .main {
     background-color: #FCFBFE;
     width: 100%;
+    height: calc(100% - 60px);
     padding-top: 31px;
     padding-left: 40px;
 }
