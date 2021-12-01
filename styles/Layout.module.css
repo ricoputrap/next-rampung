@@ -1,0 +1,11 @@
+.root {
+    height: 100vh;
+    display: flex;
+}
+
+.main {
+    background-color: #FCFBFE;
+    width: 100%;
+    padding-top: 31px;
+    padding-left: 40px;
+}

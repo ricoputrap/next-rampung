@@ -1,0 +1,9 @@
+.nav {
+    width: 243px;
+}
+
+.logo {
+    width: inherit;
+    padding: 40px 0;
+    text-align: center;
+}
