@@ -44,6 +44,10 @@
     margin-right: 10px !important;
 }
 
+.navItem button svg path {
+    stroke: #898989;
+}
+
 .navItemActive button svg path, .navItem button:hover svg path {
     stroke: #fff;
 }
