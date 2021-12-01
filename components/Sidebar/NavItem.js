@@ -2,18 +2,20 @@ import Link from "next/link"
 import { useRouter } from "next/router";
 import styles from "../../styles/Sidebar.module.css"
 
-const NavItem = ({ label, MenuIcon, path  }) => {
+const NavItem = ({ label, MenuIcon, path, isIconTypeFill = false }) => {
     const router = useRouter();
-    let classes = styles.navItem;
 
+    let rootClasses = styles.navItem;
     if (router.pathname === path) {
-        classes += ` ${styles.navItemActive}`;
+        rootClasses += ` ${styles.navItemActive}`;
     }
 
+    let btnClass = isIconTypeFill ? styles.navItemFill : "";
+
     return (
-        <li className={ classes }>
+        <li className={ rootClasses }>
             <Link href={ path }>
-                <button>
+                <button className={ btnClass }>
                     <MenuIcon />
                     { label }
                 </button>

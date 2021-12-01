@@ -52,7 +52,12 @@
     stroke: #fff;
 }
 
-.navItemFill:hover svg path {
-    fill: #fff;
+button.navItemFill svg path {
+    stroke: unset;
+}
+
+.navItemFill:hover svg path,
+.navItemActive button.navItemFill svg path {
+    fill: #fff !important;
     stroke: unset !important;
 }

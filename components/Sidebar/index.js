@@ -28,14 +28,12 @@ const Sidebar = () => {
                     MenuIcon={ GridIcon }
                     path="/grid"
                 />
-                {/* <li className={ styles.navItem }>
-                    <Link href="/dashboard">
-                        <button className={ styles.navItemFill }>
-                            <DashboardIcon />
-                            Dashboard
-                        </button>
-                    </Link>
-                </li> */}
+                <NavItem
+                    label="Dashboard"
+                    MenuIcon={ DashboardIcon }
+                    path="/dashboard"
+                    isIconTypeFill
+                />
             </ul>
         </nav>
     )
