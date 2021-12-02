@@ -23,7 +23,7 @@ export const getProjectStatistics = (projectId, tasks) => {
                 break;
         }
     });
-
+ 
     return [
         {
             label: "Todo",
