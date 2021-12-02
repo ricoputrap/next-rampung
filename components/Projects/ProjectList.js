@@ -8,12 +8,7 @@ const ProjectList = ({ projects }) => {
                 <ProjectCard
                     key={ project.id }
                     title={ project.title }
-                    statistic={[
-                    { label: "Todo", value: 21 },
-                    { label: "In Progress", value: 9 },
-                    { label: "To Review", value: 3 },
-                    { label: "Done", value: 14 },
-                    ]}
+                    statistics={ project.statistics }
                 />
             ))}
         </div>
