@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import ProjectCard from '../components/Projects/ProjectCard'
 
 export default function Home() {
   return (
@@ -9,10 +10,20 @@ export default function Home() {
         <meta name="keywords" content="task management, project management, drag and drop" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"></link>
       </Head>
-      <div>HOME CONTAINER</div>
+      
+      <ProjectCard
+        title="Laundry App"
+        statistic={[
+          { label: "Todo", value: 21 },
+          { label: "In Progress", value: 9 },
+          { label: "To Review", value: 3 },
+          { label: "Done", value: 14 },
+        ]}
+      />
+
     </div>
   )
 }

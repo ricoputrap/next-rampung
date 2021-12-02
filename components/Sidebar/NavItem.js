@@ -2,7 +2,7 @@ import Link from "next/link"
 import { useRouter } from "next/router";
 import styles from "../../styles/Sidebar.module.css"
 
-const NavItem = ({ id, label, MenuIcon, path, isIconTypeFill = false }) => {
+const NavItem = ({ label, MenuIcon, path, isIconTypeFill = false }) => {
     const router = useRouter();
 
     let rootClasses = styles.navItem;

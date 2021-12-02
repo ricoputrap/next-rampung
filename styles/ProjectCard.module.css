@@ -1,0 +1,35 @@
+.card {
+    background-color: #FFFFFF;
+    border: #F0EFF2 solid 1px;
+    border-radius: 10px;
+    padding: 10px 20px 15px 20px;
+    width: 200px;
+}
+
+.card h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: #151515;
+}
+
+.statistic {
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: 400px;
+}
+
+.statistic div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.statistic div:last-of-type {
+    margin-bottom: 0;
+}
+
+.statistic span {
+    line-height: 18px;
+    color: #595151;
+}
