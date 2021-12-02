@@ -20,5 +20,16 @@ export const projects = [
         //     revw: 0,
         //     done: 0
         // }
+    },
+    {
+        id: 3,
+        title: "eBimbel",
+        // tasks: [],
+        // statistic: {
+        //     todo: 0,
+        //     prog: 0,
+        //     revw: 0,
+        //     done: 0
+        // }
     }
 ];

@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import ProjectCard from '../components/Projects/ProjectCard'
+import ProjectList from '../components/Projects/ProjectList';
 
-export default function Home() {
+export default function Home({ projects }) {
+
   return (
     <div>
       <Head>
@@ -14,16 +15,17 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"></link>
       </Head>
       
-      <ProjectCard
-        title="Laundry App"
-        statistic={[
-          { label: "Todo", value: 21 },
-          { label: "In Progress", value: 9 },
-          { label: "To Review", value: 3 },
-          { label: "Done", value: 14 },
-        ]}
-      />
+      <ProjectList projects={ projects } />
 
     </div>
   )
+}
+
+export const getServerSideProps = async (context) => {
+  const res = await fetch("http://localhost:3000/api/v1/projects");
+  const projects = await res.json();
+
+  return {
+    props: { projects }
+  }
 }

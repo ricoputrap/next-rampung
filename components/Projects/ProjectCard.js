@@ -8,7 +8,7 @@ const ProjectCard = ({ title, statistic }) => {
 
             <div className={ styles.statistic }>
                 {statistic.map(data => (
-                    <div>
+                    <div key={ data.label }>
                         <span>{ data.label }</span>
                         <span>{ data.value }</span>
                     </div>
