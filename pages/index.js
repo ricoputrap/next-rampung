@@ -22,7 +22,8 @@ export default function Home({ projects }) {
 }
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch("http://localhost:3000/api/v1/projects");
+  const API_HOST = process.env.API_HOST;
+  const res = await fetch(`${API_HOST}/v1/projects`);
   const projects = await res.json();
 
   return {
