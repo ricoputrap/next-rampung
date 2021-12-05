@@ -1,5 +1,5 @@
 export const getProjectStatistics = (projectId, tasks) => {
-    const tasksByProjectId = tasks.filter(task => task.project == projectId);
+    const tasksByProjectId = tasks.filter(task => task.project_id == projectId);
     const statistic = {
         todo: 0,
         prog: 0,

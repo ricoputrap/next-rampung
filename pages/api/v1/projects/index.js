@@ -1,18 +1,25 @@
 import { projects } from "../../../../data";
 import { tasks } from "../../../../data";
 import { getProjectStatistics } from "../helpers";
+import { open } from "sqlite";
+import sqlite3 from "sqlite3";
+import { getTasksByProjectId } from "../tasks";
+import { getAllProjects } from "./helpers";
 
-const handler = (req, res) => {
+/**
+ * Endpoint: `/api/v1/projects/`
+ * @param {*} req 
+ * @param {*} res 
+ */
+const handler = async (req, res) => {
+    const db = await open({
+        filename: "/tmp/database.db",
+        driver: sqlite3.Database
+    });
+
     if (req.method === "GET") {
-
-        const computedProjects = projects.map(project => {
-            return {
-                ...project,
-                statistics: getProjectStatistics(project.id, tasks)
-            }
-        })
-        
-        res.status(200).json(computedProjects);
+        const projects = await getAllProjects(db);
+        res.status(200).json(projects);
     }
 }
 

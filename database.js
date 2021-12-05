@@ -1,3 +1,6 @@
+// always run `node database.js` when 
+// it's the first time you setup the project
+
 const { open } = require("sqlite");
 const sqlite3 = require("sqlite3")
 
